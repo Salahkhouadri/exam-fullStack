@@ -1,0 +1,14 @@
+<div class="select-container">
+  <select 
+    class="styled-select"
+    (change)="onCategorySelected($event)"
+  >
+    <option value="">Select</option>
+    <option 
+      *ngFor="let category of categories" 
+      [value]="category"
+    >
+      {{ category | titlecase }}
+    </option>
+  </select>
+</div>

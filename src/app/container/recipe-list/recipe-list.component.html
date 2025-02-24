@@ -1,0 +1,14 @@
+<div class="slider-container" *ngIf="meals.length">
+    <button class="nav-btn left" (click)="scrollLeft()">&#10094;</button>
+
+    <div class="slider-wrapper" #slider>
+        <div *ngFor="let meal of meals" class="slide" (click)="send(meal.idMeal)">
+            <img [src]="meal.strMealThumb" [alt]="meal.strMeal">
+            <div class="meal-name">{{ meal.strMeal }}</div>
+        </div>
+    </div>
+
+    <button class="nav-btn right" (click)="scrollRight()">&#10095;</button>
+</div>
+
+<p *ngIf="!meals.length" class="no-recipes">No recipes available.</p>

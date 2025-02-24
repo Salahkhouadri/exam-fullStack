@@ -1,0 +1,42 @@
+.select-container {
+  position: relative;
+  margin: 1rem 0;
+}
+
+.styled-select {
+  width: 100%;
+  padding: 20px 30px; 
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #ffffff;
+  font-size: 18px; 
+  color: #333;
+  transition: all 0.3s ease;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1em;
+}
+
+.styled-select:hover {
+  border-color: #a0a0a0;
+}
+
+.styled-select:focus {
+  outline: none;
+  border-color: #2196f3;
+  box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.2);
+}
+
+.styled-select option {
+  padding: 16px; 
+  font-size: 18px;
+  background-color: #fff;
+  color: #333;
+}
+
+.styled-select option:hover {
+  background-color: #2196f3;
+  color: white;
+}
